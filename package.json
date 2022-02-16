@@ -1,0 +1,25 @@
+{
+  "name": "moisture-laden-memer",
+  "version": "1.0.0",
+  "description": "Discord bot alternative to Dank Memer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoyfulReaper/Moisture-Laden-Memer.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoyfulReaper/Moisture-Laden-Memer/issues"
+  },
+  "homepage": "https://github.com/JoyfulReaper/Moisture-Laden-Memer#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0"
+  }
+}
