@@ -6,6 +6,7 @@ module.exports = {
         if (!interaction.isCommand()) return;
 
         const command = interaction.client.commands.get(interaction.commandName);
+        console.log(`--- ${interaction.commandName}`);
 
         if (!command) {
             return;
