@@ -2,6 +2,7 @@
 
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const DuckApiClient = require('../apiClients/DuckApiClient.js');
+const { simpleEmbed } = require('../util/embedHelper');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -21,6 +22,7 @@ module.exports = {
 async function doDucc(interaction) {
     const duck = new DuckApiClient();
     const image = await duck.randomDuck();
-    console.log(image.url);
-    interaction.reply(`QUACK\n${image.url}`);
+
+    interaction.reply({ embeds: [simpleEmbed('Ducc', 'QUACK!', image.url)] });
+    // interaction.reply(`QUACK\n${image.url}`);
 }
