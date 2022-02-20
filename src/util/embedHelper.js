@@ -12,7 +12,7 @@ const simpleEmbed = (title, description, image = undefined, url = undefined) => 
         }
 
         if (url) {
-            embed.setUrl(url);
+            embed.setURL(url);
         }
 
         return embed;
