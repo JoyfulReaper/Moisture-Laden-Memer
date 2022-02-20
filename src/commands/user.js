@@ -1,4 +1,3 @@
-// Subcommand demo
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
