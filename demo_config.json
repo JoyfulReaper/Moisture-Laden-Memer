@@ -1,0 +1,7 @@
+{
+	"token": "",
+    "guildId": "",
+    "clientId": "",
+    "connectionString": "mongodb://localhost:27017",
+    "database": "Moisture-Laden-Memer"
+}
