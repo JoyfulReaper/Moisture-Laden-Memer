@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { defaultColor } = require('../config.json');
+const { defaultColor } = require('../../config.json');
 
 const simpleEmbed = (title, description, image = undefined, url = undefined) => {
     const embed = new MessageEmbed()

@@ -3,6 +3,9 @@ const { Client, Collection, Intents } = require('discord.js');
 const database = require('./data/database.js');
 const { token } = require('../config.json');
 
+// Runs deploy-commands.js before starting the bot to redeploy commands
+require('child_process').fork('./deploy-commands.js');
+
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 database.connect();
